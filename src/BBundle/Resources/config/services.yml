@@ -1,0 +1,16 @@
+services:
+ test:
+      class: BBundle\Controller\Advert
+      arguments:
+        entityManager: "@doctrine.orm.entity_manager"
+
+ form_service:
+      class: BBundle\Services\FormService
+      arguments:
+        entityManager: "@doctrine.orm.entity_manager"
+
+ import_product_service:
+      class: BBundle\Services\ProductImportService
+      arguments:
+        entityManager: "@doctrine.orm.entity_manager"
+

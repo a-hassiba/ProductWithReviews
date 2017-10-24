@@ -1,0 +1,23 @@
+b_homepage:
+    path:     /
+    defaults: { _controller: BBundle:Default:index }
+
+hello_the_world:
+    path:     /hello-world
+    defaults: { _controller: BBundle:Advert:translation }
+
+hello:
+    path:     /hello
+    defaults: { _controller: BBundle:Advert:new }
+
+task_success:
+    path:     /success
+    defaults: { _controller: BBundle:Advert:success }
+
+filter_text:
+    path:     /filter-text
+    defaults: { _controller: BBundle:Form:testFilter}
+
+contact:
+    path:     /contact
+    defaults: { _controller: BBundle:Form:contact}
